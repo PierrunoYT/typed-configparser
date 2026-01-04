@@ -8,22 +8,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- Nothing yet
+- Comprehensive publishing guide (`PUBLISHING.md`) with step-by-step instructions
+- Development tooling configuration (mypy, ruff) in `pyproject.toml`
+- Separate `test` and `dev` optional dependency groups
+- Python 3.13 support in classifiers
+- Additional metadata fields (maintainers, expanded keywords)
 
 ### Changed
-- Nothing yet
-
-### Deprecated
-- Nothing yet
-
-### Removed
-- Nothing yet
+- Updated package name from `typed-configparser` to `configparser-typed` for PyPI publication
+- Updated `pyproject.toml` to use modern SPDX license format (`license = "MIT"`)
+- Improved project URLs structure for better readability
+- Enhanced pytest configuration with strict markers and coverage options
+- Expanded keywords for better package discoverability
 
 ### Fixed
-- Nothing yet
-
-### Security
-- Nothing yet
+- Removed deprecated license table format to eliminate build warnings
+- Removed deprecated license classifier in favor of SPDX expression
 
 ## [0.1.0] - 2026-01-04
 

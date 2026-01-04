@@ -9,7 +9,7 @@ A small, modern Python library that provides a typed, validated wrapper around P
 ## Installation
 
 ```bash
-pip install typed-configparser
+pip install configparser-typed
 ```
 
 Or install from source:
@@ -51,10 +51,11 @@ assert isinstance(config.debug, bool)  # True
 ## Features
 
 - **Typed section loading**: Map INI sections to dataclasses or Pydantic models
-- **Type conversion**: Automatic conversion for `int`, `float`, `bool`, and `str`
+- **Type conversion**: Automatic conversion for `int`, `float`, `bool`, `str`, `list`, `dict`, and `Path`
 - **Validation**: Clear errors for missing keys, unknown keys, and type mismatches
 - **Optional fields**: Support for `Optional[T]` and default values
-- **Python 3.10+**: Full type hints throughout
+- **Python 3.10+**: Full type hints throughout with `py.typed` marker
+- **Zero dependencies**: Uses only Python standard library
 
 ## Non-goals
 
@@ -69,4 +70,50 @@ This library intentionally does **not** provide:
 - Logging framework integration
 
 If you need these features, this library is not for you.
+
+## Development
+
+### Running Tests
+
+```bash
+# Install development dependencies
+pip install -e ".[dev]"
+
+# Run tests
+pytest
+
+# Run tests with coverage
+pytest --cov=typed_configparser
+```
+
+### Type Checking
+
+```bash
+mypy typed_configparser/
+```
+
+### Linting
+
+```bash
+ruff check .
+```
+
+## Publishing
+
+See [PUBLISHING.md](PUBLISHING.md) for detailed instructions on building and publishing this package to PyPI.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+MIT License - see the LICENSE file for details.
+
+## Links
+
+- **PyPI**: https://pypi.org/project/configparser-typed/
+- **Source Code**: https://github.com/PierrunoYT/typed-configparser
+- **Issue Tracker**: https://github.com/PierrunoYT/typed-configparser/issues
+- **Changelog**: https://github.com/PierrunoYT/typed-configparser/releases
 
