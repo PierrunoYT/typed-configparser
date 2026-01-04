@@ -6,6 +6,20 @@ A small, modern Python library that provides a typed, validated wrapper around P
 
 `typed-configparser` lets you load INI configuration files into typed dataclasses or Pydantic models with automatic type conversion and validation. It's thin, explicit, and predictable—no magic, no auto-loading, no framework overhead.
 
+## Installation
+
+```bash
+pip install typed-configparser
+```
+
+Or install from source:
+
+```bash
+git clone https://github.com/PierrunoYT/typed-configparser.git
+cd typed-configparser
+pip install -e .
+```
+
 ## Example
 
 Given an INI file:
